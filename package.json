@@ -30,13 +30,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-ui.umd.js",
-  "module": "./dist/my-ui.es.js",
+  "main": "./dist/xbom-lib.umd.js",
+  "module": "./dist/xbom-lib.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-ui.es.js",
-      "require": "./dist/my-ui.umd.js"
+      "import": "./dist/xbom-lib.es.js",
+      "require": "./dist/xbom-lib.umd.js"
     }
   },
-  "types": "./dist/packages/components/index.d.ts"
+  "types": "./dist/packages/index.d.ts"
 }

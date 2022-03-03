@@ -1,8 +1,8 @@
 <template>
-<h1>Hello {{ msg }}!</h1>
+<h1 v-bind="$attrs">Hello {{ msg }}!</h1>
 </template>
 
-<script lang="ts" setup name="Hello">
+<script lang="ts" setup name="Hello" :inheritAttrs="false">
 const { msg } =  defineProps<{ msg: string }>()
 
 </script>

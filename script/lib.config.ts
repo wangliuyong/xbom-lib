@@ -18,9 +18,10 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "../packages/components/index.ts"),
+      entry: path.resolve(__dirname, "../packages/index.ts"),
       name: "xbom-lib",
       fileName: (format: string) => `xbom-lib.${format}.js`,
+      formats: ['es', 'umd', 'cjs']
     },
     rollupOptions: {
       external: Object.keys(require("../package.json").peerDependencies),
