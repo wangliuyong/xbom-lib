@@ -13,5 +13,10 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
       imports: ['vue']
     }),
-  ]
+  ],
+  resolve: {
+    alias: {
+      'xbom-lib': '/packages/components'
+    }
+  }
 })
