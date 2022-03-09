@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import XbomLib from '../packages'
-
 import Routes from './router'
 import 'ant-design-vue/dist/antd.css'
+// import XbomLib from '../packages/index'
 
-createApp(App).use(Routes).use(XbomLib).mount('#app')
+import lib from 'xbom-libs'
+createApp(App).use(Routes).use(lib).mount('#app')

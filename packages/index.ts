@@ -1,5 +1,5 @@
 import './styles/index.scss'
-import Hello from './components/Hello/index.vue';
+import Hello from './components/Hello';
 
 const components = {
   Hello,
@@ -7,14 +7,14 @@ const components = {
 
 const install = function (Vue: any) {
   Object.values(components).forEach((component) => {
+    console.log(component);
+    
     Vue.component(component.name, component);
   });
 };
 
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-}
-
-export { default as Hello } from './components/Hello/index.vue';
+// if (typeof window !== 'undefined' && window.Vue) {
+//   install(window.Vue);
+// }
 
 export default { install };

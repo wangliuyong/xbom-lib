@@ -16,13 +16,14 @@ export default defineConfig({
       ],
     }),
   ],
+  
   build: {
     lib: {
       // 设置入口文件
       entry: path.resolve(__dirname, "../packages/index.ts"),
       name: "xbom-lib",
       fileName: (format: string) => `xbom-lib.${format}.js`,
-      formats: ['es', 'umd', 'cjs'],
+      formats: ['es', 'umd'],
   
     },
     sourcemap: true, // 输出.map文件

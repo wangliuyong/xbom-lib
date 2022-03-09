@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      'xbom-lib': '/packages/components'
+      // 'xbom-lib': '/packages/components'
     }
   }
 })

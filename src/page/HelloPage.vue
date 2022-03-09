@@ -1,10 +1,7 @@
 <template>
-
+3232
+  <!-- <Hello  msg="324342"/> -->
 </template>
 
 <script setup lang="ts">
-import { Layout } from 'ant-design-vue'
-
-
-
 </script>
