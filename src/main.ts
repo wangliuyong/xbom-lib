@@ -5,5 +5,6 @@ import 'ant-design-vue/dist/antd.css'
 import XbomLib from '../packages/index'
 
 import lib from 'xbom-libs'
+import 'xbom-libs/dist/style.css'
 
-createApp(App).use(Routes).use(lib).mount('#app')
+createApp(App).use(Routes).use(XbomLib).mount('#app')

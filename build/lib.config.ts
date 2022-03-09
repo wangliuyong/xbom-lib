@@ -13,6 +13,7 @@ export default defineConfig({
         "packages/**/*.d.ts",
         "packages/**/*.tsx",
         "packages/**/*.vue",
+        "packages/**/*.scss"
       ],
     }),
   ],

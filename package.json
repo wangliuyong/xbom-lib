@@ -1,17 +1,17 @@
 {
-  "name": "xbom-libs",
+  "name": "xbom-lib",
   "private": false,
-  "version": "1.0.10",
+  "version": "1.0.11",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "build:lib": "vite build --config ./script/lib.config.ts"
+    "build:lib": "vite build --config ./build/lib.config.ts"
   },
   "dependencies": {
     "sass": "^1.49.9",
     "vue": "^3.2.25",
-    "xbom-libs": "^1.0.10"
+    "xbom-libs": "^1.0.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
@@ -31,12 +31,19 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "test"
+  ],
   "main": "./dist/xbom-lib.umd.js",
   "module": "./dist/xbom-lib.es.js",
   "exports": {
     ".": {
       "import": "./dist/xbom-lib.es.js",
       "require": "./dist/xbom-lib.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "types": "./dist/packages/index.d.ts"
